@@ -9,6 +9,4 @@ Since 2008, I have been storing my bank transactions on clearcheckbook.com, whic
 Months later, I read Automate the Boring Stuff with Python and learnt about [openpyxl](https://openpyxl.readthedocs.io/en/default/) which is presumably a better way to do it than Beautiful Soup. One day I'll play around with doing the same task using openpyxl instead.
 
 ##Usage
-Make sure Beautiful Soup is good and running in the same directory, then `python uob_xl2qif >> blah.qif`.
-
-
+Make sure Beautiful Soup is good and running in the same directory, then edit the input filename in `uob_xl2qif.py`, then `python uob_xl2qif.py >> blah.qif`.
