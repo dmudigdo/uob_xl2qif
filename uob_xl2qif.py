@@ -24,13 +24,20 @@ def getamount(amnttd):
  
 from BeautifulSoup import *
 import datetime
- 
+
+# open the file 
 fhandle = open("Jan2016.xls")
+
+# soupize it
 soup = BeautifulSoup(fhandle)
+
+# each table row <tr> tag is a transaction, collect it in an array
 trtags = soup('tr','text-md')
- 
+
+# the QIF header 
 print '!Type:Bank'
- 
+
+# loop through the <tr>s/transactions 
 for trtag in trtags:
 # for each <tr> in the table
     for i in range(0,8):
