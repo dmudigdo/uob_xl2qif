@@ -25,8 +25,10 @@ def getamount(amnttd):
 from BeautifulSoup import *
 import datetime
 
-# open the file 
-fhandle = open("Jan2016.xls")
+# open the file
+name = raw_input("Enter file:")
+fhandle = open(name)
+
 
 # soupize it
 soup = BeautifulSoup(fhandle)
