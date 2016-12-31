@@ -11,5 +11,5 @@ Since 2008, I have been storing my bank transactions on clearcheckbook.com, whic
 ##Usage
 Make sure Beautiful Soup is up and running (this was written using Beautiful Soup 3). Then:
 
-    python uob_xl2qif.py input.xls output.txt
+    python uob_xl2qif.py input.xls output.qif
 
