@@ -1,4 +1,4 @@
-from BeautifulSoup import *
+from bs4 import BeautifulSoup
 import datetime, sys
  
 def getdate(datetd):
@@ -36,7 +36,7 @@ else:
     ofhandle = open(sys.argv[2],'w')
 
 # soupize it
-    soup = BeautifulSoup(ifhandle)
+    soup = BeautifulSoup(ifhandle,"lxml")
 
 # each table row <tr> tag is a transaction, collect it in an array
     trtags = soup('tr','text-md')
